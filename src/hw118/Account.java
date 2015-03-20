@@ -74,6 +74,10 @@ public class Account {
 		return name;
 	} // name accessor
 	
+	public ArrayList<Transaction> getTransaction(){
+		return transaction;
+	}
+	
 	public double getMonthlyInterestRate(){
 		return (annualInterestRate/12);
 	} // get monthly interest rate
@@ -94,6 +98,6 @@ public class Account {
 	
 	@Override
 	public String toString(){
-		return ("The Account id is "+id+"\nThe balance is "+balance+"\nThe annual interest rate is "+annualInterestRate+"%\nIt created at "+dateCreated);
+		return ("The Account id is "+id+"\nThe holder name is "+name+"\nThe balance is "+balance+"\nThe annual interest rate is "+annualInterestRate+"%\nIt created at "+dateCreated);
 	}
 }

@@ -51,6 +51,6 @@ public class Transaction {
 	
 	@Override
 	public String toString(){
-		return ("The transaction type is "+type+"\nThe amount is "+amount+"\nThe new balance after this transaction is "+balance+"\nThe descripton is "+description+"\n");
+		return ("The transaction happend at "+date+"\ntype is "+type+"\nThe amount is "+amount+"\nThe new balance after this transaction is "+balance+"\nThe descripton is "+description+"\n");
 	}
 }
